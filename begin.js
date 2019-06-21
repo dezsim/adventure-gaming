@@ -3,13 +3,13 @@ const begin = (name) => {
   console.log('\x1b[33m' + 'Bemutatjuk legújabb kalandjátékunkat, avagy az 1990-es években játszódó, KAZÉTA nevű kalandjátékot.');
   console.log('Amennyiben készen állsz nyomj meg egy gombot, és Kezdődjön a Kal&&!' + '\x1b[0m');
   while (true) {
-    let key = readline.question();
+    let key = readline.keyIn();
     if (key !== null) {
       break;
     }
   }
   console.log('');
-  console.log('Egy különös hotelszobában ébredsz fel, Péntek hajnalban. Nagy hangzavar \n szűrődik át a szomszédos szobából, valószínűleg valami egyetemisták lehetnek.');
+  console.log('Egy különös hotelszobában ébredsz fel, Péntek hajnalban. Nagy hangzavar szűrődik át a szomszédos szobából, valószínűleg valami egyetemisták lehetnek.');
   console.log('');
 
   console.log('Észreveszed, hogy a bal kezed az ágyhoz van bilincselve, valamit a padlón piros foltokat látsz, valószínűsíthető vérfoltokat.');
