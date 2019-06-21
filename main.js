@@ -16,7 +16,7 @@ let items = [
 
 term.singleColumnMenu(items, function (error, response) {
   term('\n').eraseLineAfter.green(
-    '#%s selected: %s (%s,%s)\n',
+    '#%s válasz: %s (%s,%s)\n',
     response.selectedIndex,
     response.selectedText,
     response.x,
@@ -25,6 +25,11 @@ term.singleColumnMenu(items, function (error, response) {
   input = readline.keyIn();
   if (input === 'q') {
     process.exit();
+  }
+  switch ('%s') {
+    case 1: '0';
+      console.log('kuka');
+      break;
   }
 });
 // let input = read();
