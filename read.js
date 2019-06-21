@@ -1,6 +1,7 @@
 const read = () => {
   let readline = require('readline-sync');
-  input = readline.question();
+  let input = readline.question();
+  return input;
 };
 
 module.exports = read;
