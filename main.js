@@ -1,5 +1,9 @@
 let read = require('./read');
 let welcome = require('./welcome');
+let begin = require('./begin');
 
 let name = welcome();
-let input = read();
+
+begin(name);
+
+// let input = read();
