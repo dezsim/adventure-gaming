@@ -1,0 +1,22 @@
+{
+  "name": "adventure-gaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dezsimartin/adventure-gaming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dezsimartin/adventure-gaming/issues"
+  },
+  "homepage": "https://github.com/dezsimartin/adventure-gaming#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
