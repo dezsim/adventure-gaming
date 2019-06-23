@@ -8,28 +8,45 @@ let name = welcome();
 
 begin(name);
 
-let items = [
-  'a. Megpróbálom kiszabadítani magam.',
-  'b. Levágom a kezem.',
-  'c. Visszaalszok.'
+let choice = [
+  '1. Megpróbálom kiszabadítani magam.',
+  '2. Levágom a kezem.',
+  '3. Visszaalszok.'
 ];
-
-term.singleColumnMenu(items, function (error, response) {
-  term('\n').eraseLineAfter.green(
-    '#%s válasz: %s (%s,%s)\n',
-    response.selectedIndex,
-    response.selectedText,
-    response.x,
-    response.y
-  );
-  input = readline.keyIn();
-  if (input === 'q') {
-    process.exit();
-  }
-  switch ('%s') {
-    case 1: '0';
-      console.log('kuka');
-      break;
-  }
-});
+console.log(choice);
+let valasztas = read();
+switch (valasztas) {
+  case '1':
+    console.log('Nagy szerencsédre, meglátod a bilincs kulcsát az éjjeli szekrényen. Kattan a \nbilincs, ahogy mondani szokás, azonban most a jó értelemben.');
+    console.log('\n Mi a következő lépésed?');
+    choice = [
+      '1. Körbenézek a szobában.',
+      '2. Kimegyek a folyosóra.',
+      '3. Kiugrok az ablakon.'
+    ];
+    console.log(choice);
+    valasztas = read();
+    switch (valasztas) {
+      case '1':
+        console.log('Sajnos semmi használható nincs, kivéve egy plakát amelyen a PHP szó szerepel.');
+        break;
+      case '2':
+        console.log('A folyosón állsz. ');
+        break;
+      case '3':
+        console.log('\x1b[31m' + 'Meghaltál.' + '\x1b[0m' + 'Miért tenne bárki ilyet magával? Sajnos mostmár sohasem tudhatjuk meg.');
+        break;
+      default:
+        console.log('\x1b[31m' + 'Csalni szerettél volna a játékban, ezért Máté sebészeset játszott veled. Konkrétan kivágásra kerültél.' + '\x1b[0m');
+        break;
+    }
+    break;
+  case '2':
+    break;
+  case '3':
+    break;
+  default:
+    console.log('\x1b[31m' + 'Csalni szerettél volna a játékban, ezért Máté sebészeset játszott veled. Konkrétan kivágásra kerültél.' + '\x1b[0m');
+    break;
+}
 // let input = read();

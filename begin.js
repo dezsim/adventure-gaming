@@ -13,6 +13,7 @@ const begin = (name) => {
   console.log('');
 
   console.log('Észreveszed, hogy a bal kezed az ágyhoz van bilincselve, valamit a padlón piros foltokat látsz, valószínűsíthető vérfoltokat.');
+  console.log('\n Mit teszel?');
 };
 
 module.exports = begin;
