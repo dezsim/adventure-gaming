@@ -1,6 +1,7 @@
 const begin = (name) => {
   let readline = require('readline-sync');
   console.log('\x1b[33m' + 'Bemutatjuk legújabb kalandjátékunkat, avagy az 1990-es években játszódó, KAZÉTA nevű kalandjátékot.');
+  console.log('Minden döntésed hatással van a játékmenetre, kérlek, jól gondold át mi a választásod!.');
   console.log('Amennyiben készen állsz nyomj meg egy gombot, és Kezdődjön a Kal&&!' + '\x1b[0m');
   while (true) {
     let key = readline.keyIn();
